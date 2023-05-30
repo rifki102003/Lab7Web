@@ -9,15 +9,6 @@
 | **Mata Kuliah** | Pemrograman Web 2 |
 
 # Codeigniter 4
-
-<p align="center">
- <img src=""/>
-</p>
-
-<p align="center">
-<a href="https://github.com/kyuurazz"><img title="Author" src="https://img.shields.io/badge/Author%20-Bilal%20Hafidz-blue.svg?style=flat&logo=github"></a>
-<p align="center">
-
 <p>
 CodeIgniter adalah sebuah framework PHP yang digunakan untuk membangun aplikasi web. Framework ini dikembangkan dengan tujuan untuk memudahkan proses pengembangan aplikasi web dengan menggunakan PHP. CodeIgniter memiliki banyak fitur yang memudahkan pengembang dalam membangun aplikasi web seperti sistem routing, pembuatan kueri database, dan juga pembuatan tampilan menggunakan template.</p>
 
