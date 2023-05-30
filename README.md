@@ -1,6 +1,9 @@
 # Lab7Web
 # Tugas Pemograman Web 2
 ## Profil
+|Nama   : Muhamad Rifki |
+|NIM    : 312******     |
+|KELAS  : TI.21.A.1     |
 ## A. Persiapan 
 
 Sebelum memulai menggunakan Framework Codeigniter, perlu dilakukan konfigurasi pada webserver. Beberapa ekstensi PHP perlu diaktifkan untuk kebutuhan pengembangan Codeigniter 4.
@@ -15,12 +18,12 @@ Berikut beberapa ekstensi yang perlu diaktifkan:
 
 Untuk mengaktifkan ekstensi tersebut, melalui **XAMPP Control Panel**, pada bagian **Apache** klik **Config** -> **PHP(php.ini)**
 
-![Gambar 1](ss/1.png)
+![Gambar 1](img/ss2.png)
 
 
 Pada bagian extention, hilangkan tanda ; (titik koma) pada ekstensi yang akan diaktifkan. Kemudian simpan kembali filenya dan restart Apache web server.
 
-![Gambar 2](ss/2.png)
+![Gambar 2](img/ss1.png)
 
 
 ## B. Installasi Codeigniter 4
@@ -43,27 +46,21 @@ Untuk melakukan instalasi Codeigniter 4 dapat dilakukan dengan dua cara, yaitu c
 
 3. Perintah yang dapat dijalankan untuk memanggil CLI Codeigniter adalah : `php spark`
 
-![Gambar 4](ss/4.png)
 
 
 ## D. Mengaktifkan Mode Debugging
 
 Codeigniter 4 menyediakan fitur debugging untuk memudahkan developer untuk mengetahui pesan error apabila terjadi kesalahan dalam membuat kode program. Secara default fitur ini belum aktif. Ketika terjadi error pada aplikasi akan ditampilkan pesan kesalahan seperti berikut.
 
-![Gambar 5](ss/5.png)
-
 Semua jenis error akan ditampilkan sama. Untuk memudahkan mengetahui jenis errornya, maka perlu diaktifkan mode debugging dengan mengubah nilai konfigurasi pada environment variable **CI_ENVIRONMENT** menjadi **development**.
 
 1. Ubah nama file **env** menjadi **.env** kemudian buka file tersebut dan ubah nilai variable **CI_ENVIRONMENT** menjadi **development**, hilangkan juga tanda **'#'**.
 
-![Gambar 6](ss/6.png)
+![Gambar 6](img/ss5.png)
 
 2. Contoh error yang terjadi. Untuk mencoba error tersebut, ubah kode pada file **app/Controller/Home.php** hilangkan titik koma pada akhir kode.
 
-![Gambar 7](ss/7.png)
-
-
-![Gambar 8](ss/8.png)
+![Gambar 8](img/ss4.PNG)
 
 
 ## E. Routing dan Controller
@@ -71,37 +68,6 @@ Semua jenis error akan ditampilkan sama. Untuk memudahkan mengetahui jenis error
 Routing merupakan proses yang mengatur arah atau rute dari request untuk menentukan fungsi/bagian mana yang akan memproses request tersebut. Pada framework CI 4, routing bertujuan untuk menentukan Controller mana yang harus merespon sebuah request. **Controller adalah class atau script yang bertanggung jawab merespon sebuah request**. Pada Codeigniter, request yang diterima oleh file **index.php** akan diarahkan ke Router untuk kemudian oleh router tesebut diarahkan ke Controller.
 
 * Router terletak pada file **app/config/Routes.php**
-
-![Gambar 9](ss/9.png)
-
-* Pada file tersebut kita dapat mendefinisikan route untuk aplikasi yang kita buat.
-Contoh :
-    `$routes->get('/', 'Home::index');`
-(Kode tersebut akan mengarahkan rute untuk halaman home.)
-
-### 1. Membuat Route Baru
-
-* Tambahkan kode berikut di dalam **Routes.php**.
-    ```bash
-        $routes->get('/about', 'Page::about'); 
-        $routes->get('/contact', 'Page::contact'); 
-        $routes->get('/faqs', 'Page::faqs');
-    ```
-
-![Gambar 10](ss/10.png)
-
-* Untuk mengetahui route yang ditambahkan sudah benar, buka CLI dan jalankan perintah berikut.
-    `php spark routes`
-
-![Gambar 11](ss/11.png)
-
-* Sebelum mengakses route yang telah dibuat, buka CLI dan jalankan perintah `php spark serve`. Kemudian akses alamat url http://localhost:8080/about
-
-![Gambar 12](ss/12.png)
-
-![Gambar 13](ss/13.png)
-
-Ketika diakses akan mucul tampilan error 404 file not found, itu artinya file/page tersebut tidak ada. Untuk dapat mengakses halaman tersebut, harus dibuat terlebih dahulu Contoller yang sesuai dengan routing yang dibuat yaitu Contoller Page.
 
 ### 2. Membuat Controller
 
@@ -126,11 +92,6 @@ Ketika diakses akan mucul tampilan error 404 file not found, itu artinya file/pa
         } 
     }
 ```
-
-* Selanjutnya refresh Kembali browser, maka akan ditampilkan hasilnya yaitu halaman sudah dapat diakses.
-
-![Gambar 14](ss/14.png)
-
 
 ### 3. Auto Routing
 
@@ -183,22 +144,12 @@ Ketika diakses akan mucul tampilan error 404 file not found, itu artinya file/pa
     }
 ```
 
-* Kemudian lakukan refresh pada halaman tersebut.
-
-![Gambar 16](ss/16.png)
-
 
 ### 5. Membuat Layout Web dengan CSS
 
 Pada dasarnya layout web dengan css dapat diimplamentasikan dengan mudah pada codeigniter. Yang perlu diketahui adalah, pada Codeigniter 4 file yang menyimpan asset css dan javascript terletak pada direktori **public**.
 
 * Buat file css pada direktori **public** dengan nama **style.css**.
-
-![Gambar 17](ss/17.png)
-
-* Kemudian buat folder template pada direktori view kemudian buat file **header.php** dan **footer.php**.
-
-![Gambar 17-1](ss/20.png)
 
 * File **app/view/template/header.php**
 
@@ -265,7 +216,7 @@ Pada dasarnya layout web dengan css dapat diimplamentasikan dengan mudah pada co
 
 * Selanjutnya refresh tampilan pada alamat http://localhost:8080/about
 
-![Gambar 18](ss/18.png)
+![Gambar 18](img/ss6.PNG)
 
 
 ## Pertanyaan dan Tugas
