@@ -2,8 +2,8 @@
 ## Profil
 | #               | Biodata           |
 | --------------- | ----------------- |
-| **Nama**        | Bilal AlHafidz    |
-| **NIM**         | 312110397         |
+| **Nama**        | Muhamad Rifki     |
+| **NIM**         | 312110205         |
 | **Kelas**       | TI.21.A.1         |
 | **Mata Kuliah** | Pemrograman Web 2 |
 
