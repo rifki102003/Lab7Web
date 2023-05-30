@@ -11,7 +11,7 @@
 # Codeigniter 4
 
 <p align="center">
- <img src="img/logo.png"/>
+ <img src=""/>
 </p>
 
 <p align="center">
